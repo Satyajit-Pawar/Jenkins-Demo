@@ -1,1 +1,2 @@
-Hello From motd
+#!/bin/bash
+echo "Hello from motd"
