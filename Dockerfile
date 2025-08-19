@@ -1,7 +1,5 @@
-FROM alpine:latest
+# Use official Apache HTTP Server image
+FROM httpd:2.4
 
-# Create a file inside the container
-RUN echo "Hello from MOTD" > test.txt1
-
-# Default command to show the file content
-CMD cat test.txt1
+# Expose Apache default port
+EXPOSE 80
